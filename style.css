@@ -1,0 +1,119 @@
+body{
+    background: url("new.jpg");
+}
+
+body .container{
+    margin: 10px auto; 
+    padding: 60px;
+}
+
+body h1{
+    color: black;
+    font-size: 45px;
+}
+
+body hr {
+    border: none;
+    height: 2px;
+    color: #000; 
+    background-color: #111;
+    width: 500px;
+}
+
+body img{
+    width: 300px;
+    border: 1px solid black;
+    transition: width 2s, height 2s, transform 0.3s;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+body img:hover{
+    transform: scale(1.05,1.05);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+body .form-control{
+    border: 1px solid black;
+    width: 300px;
+}
+
+body h3{
+    width: 100%;
+    height: 40px;
+    float: left;
+    background: #04f420;
+}
+
+body button{
+    border:1px solid black;  
+}
+
+body input{
+    margin: 0 auto;
+    color: black;  
+}
+
+body #search{
+    margin: 10px;
+}
+
+body .btn-primary a{
+    color: black;
+    font-family: "Bebas Neue";
+    font-size: 25px;
+}
+
+body .edit{
+    background: #2980b9;
+    border: 1px black solid;
+    padding: 20px;
+    border-radius: 15px;
+    font-size: 20px;
+    transition: width 2s, height 2s, transform 0.3s;
+}
+
+body .edit:hover{
+    transform: scale(1.05,1.05);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+body #facebookIcon{
+    color:rgb(59,89,163);
+}
+
+body footer{
+    
+    padding: 30px;
+    width:100%;
+    position:fixed;
+    bottom:0;
+    left:0;
+
+}
+
+body span{
+    color: #c0392b;
+    font-size: 25px;
+
+}
+
+body footer p{
+    float: right;
+    color: black;
+
+}
+
+body h5{
+    color: black;
+    text-decoration: underline;
+}
+
+body .paddingBTN{
+    font-size: 15px;
+    background-color: black;
+    color: white;
+    border-color: black;
+}
+
+
+
