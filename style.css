@@ -8,7 +8,11 @@ body .container{
 }
 
 body h1{
+<<<<<<< HEAD
     font-family: 'Indie Flower', cursive;
+=======
+    font-family: 'Indie Flowere;
+>>>>>>> b59d2cfbe20575680b5594defcdaae4c75f3763d
     color: black;
     font-size: 80px;
 }
