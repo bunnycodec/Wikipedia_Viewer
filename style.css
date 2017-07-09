@@ -8,8 +8,9 @@ body .container{
 }
 
 body h1{
+    font-family: "indie flower";
     color: black;
-    font-size: 45px;
+    font-size: 80px;
 }
 
 body hr {
