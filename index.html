@@ -1,51 +1,69 @@
 <DOCTYPE! html>
     <html>
-        <head>
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <meta charset="UTF-8">
-            <meta name="author" content="Sunny Kumar">
-            <title> Wikipedia Viewer </title>
 
-            <link rel="stylesheet" href="style.css">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Sunny Kumar">
+        <title> Wikipedia Viewer </title>
 
-            <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-            <script type="text/javascript" src="java.js"></script>
-            
-            <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-            <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>  
+        <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+            integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+    </head>
 
-            <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <body>
+        <div class="container text-center">
+            <h1 class="display-2 title pt-3">Wikipedia Viewer</h1>
+            <hr class="w-50 mx-auto" style="border: black solid 1px;" />
+            <p class="lead m-0 mt-4" style="font-size: 180%; color: black;">Random Wiki Viewer</p>
+            <a href="https://en.wikipedia.org/wiki/Special:Random" target="_blank">
+                <img src="https://rahlegal.in/wp-content/uploads/2015/10/Wikipedia-Profile.jpg"
+                    class="img-fluid rounded shadow-lg">
+            </a>
+            <div class="input-group m-3 w-25 mx-auto shadow-lg">
+                <span class="input-group-text" id="basic-addon3">WiKi Anything </span>
+                <input type="text" class="form-control" id="searchTerm" aria-describedby="basic-addon3">
+            </div>
+            <button class="btn btn-info rounded border border-dark mb-4" id="search">Search</button>
+            <div class="row">
+                <div class="col-sm-8 offset-2">
+                    <ul class="list-group text-center" id="list">
+                    </ul>
+                </div>
+            </div>
+        </div>
 
-            <script type="text/javascript" src="jquery.js"></script>
-
-        </head>
-
-        <body>
+        <footer class="container text-center p-3 m-3 shadow-lg">
+            <div class="float-left">
+                <a href="https://www.linkedin.com/in/bunnycodec/" target="_blank"
+                    class="btn btn-info border border-dark mx-2"><i style="color: black;" class="fa fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/bunnycodec" target="_blank" class="btn btn-info border border-dark mx-2"><i
+                        style="color: black;" class="fa fa-github"></i>
+                </a>
+                <a href="https://www.instagram.com/bit_2_byte/" target="_blank"
+                    class="btn btn-info border border-dark mx-2"><i style="color: black;" class="fa fa-instagram"></i>
+                </a>
+            </div>
             <div class="container">
-                <div class="text-center">
-                    <h1>Wikipedia Viewer<hr/></h1>
-                    <h4>Random Wiki Viewer<h4>
-                        <a href="https://en.wikipedia.org/wiki/Special:Random" target="_blank">
-                            <img src="https://rahlegal.in/wp-content/uploads/2015/10/Wikipedia-Profile.jpg">
-                        </a><br><br>
-                        <input type="text" class="form-control" id="searchTerm" placeholder="Type Here">
-                        <button type="button" class="btn btn-primary" id="search">Submit</button>
-                        </div>
-                        <ul id="list">
+                Designed & Coded by
+                <a href="https://www.linkedin.com/in/bunnycodec" target="_blank">
+                    Sunny Kumar</a>
+            </div>
+        </footer>
 
-                        </ul>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+        </script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+            integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous">
+        </script>
+        <script type="text/javascript" src="jquery.js"></script>
+        <script type="text/javascript" src="java.js"></script>
+    </body>
 
-                        <footer>
-                            <h5>Reach Me &#x00040;</h5>
-                            <p> a page by <span><strong>Sunny Kumar</strong></span></p>
-
-                            <a class ="btn btn-default paddingBTN" href="https://www.facebook.com/profile.php?id=100006147637608" target="_blank"><i class="fa fa-facebook" id="facebookIcon"></i> Facebook</a>
-                        </footer>
-                        </div>
-                    </body>
-
-                </html>
+    </html>

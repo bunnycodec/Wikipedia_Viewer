@@ -15,7 +15,7 @@ $(document).ready(function(){
             success: function(data){
                 $("#list").html("");
                 for(var i=0;i<data[1].length;i++){
-                    $("#list").prepend("<div><div class='btn-primary edit'><a href="+ data[3][i] +">"+data[1][i]+"</a><p>"+ data[2][i] +"</p></li></div><hr></div>");
+                    $("#list").prepend("<li class='rounded border border-dark list-group-item edit bg-info p-4 m-2'><a class='lead text-dark' href=" + data[3][i] + ">" + data[1][i] + "</a>" + data[2][i] + "</li>");
                 }
             },
             error: function(data){
